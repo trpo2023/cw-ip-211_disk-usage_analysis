@@ -66,12 +66,12 @@ class Cleaner:
             for entry in it:
                 if entry.is_file():
                     result.append(
-                        f"{entry.name}: {self.convert_file_size(entry.stat().st_size)} [{entry.path}]")
+                        f"{entry.name}: {self.convert_file_size(entry.stat().st_size)}")
                 elif entry.is_dir():
 
                     size = self._get_directory_size(entry.path)
                     result.append(
-                        f"{entry.name}: {self.convert_file_size(size)} [{entry.path}]")
+                        f"{entry.name}: {self.convert_file_size(size)}")
         return result
 
     def _get_directory_size(self, path):
