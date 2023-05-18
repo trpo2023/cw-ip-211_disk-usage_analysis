@@ -1,6 +1,3 @@
-import os
-import shutil
-import builtins
 import pytest
 
 from main import show_command_list, remove_files, Cleaner
