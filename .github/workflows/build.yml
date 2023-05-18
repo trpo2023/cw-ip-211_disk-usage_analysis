@@ -12,4 +12,4 @@ jobs:
         with:
           python-version: '3.9'
       - name: Test with pytest
-      - run: pytest
+      - run: test.py
