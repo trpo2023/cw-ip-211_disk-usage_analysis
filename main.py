@@ -115,4 +115,4 @@ if __name__ == '__main__':
         else:
             print(f"\033[31mError: no command - {command}")
             command = input("\033[32mEnter a command: \033[37m")
-    os.abort()
+    exit(0)
